@@ -6,6 +6,8 @@ import { creeaza, NUME_TIP } from './exercises.js';
 import { retea } from './retea.js';
 
 let deblocat = false;
+// PIN-ul profesorului este fix, același pe toate dispozitivele (hash SHA-256, nu PIN-ul în clar).
+const PIN_HASH = '0c2c2a599954cfff3e10398696e253d1b5889027d885658f8d6927c43a1b8001';
 const hashPin = async (p) => {
   try { const b = await crypto.subtle.digest('SHA-256', new TextEncoder().encode('gq-cl5:' + p)); return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join(''); }
   catch (e) { return 'p:' + p; }
@@ -16,15 +18,14 @@ export function ecranProfesor(app) {
   app.append(h('nav', { class: 'pesmet' }, h('a', { href: '#/' }, '← Acasă')), h('h1', { class: 'titlu-sectiune' }, '🔐 Modul Profesor'));
   if (!deblocat) {
     const inp = h('input', { class: 'camp', type: 'password', inputmode: 'numeric', maxlength: 8, 'aria-label': 'PIN', autocomplete: 'off' });
-    const nou = !s.pin;
+    const nou = false;
     app.append(h('section', { class: 'card' },
       h('p', {}, nou ? 'Setează un PIN (4–8 cifre). Se păstrează doar pe acest dispozitiv.' : 'Introdu PIN-ul profesorului.'),
       h('label', { class: 'eticheta' }, 'PIN', inp),
       h('div', { class: 'rand-butoane' }, h('button', { class: 'btn', onclick: async () => {
         const v = inp.value.trim(); if (!/^\d{4,8}$/.test(v)) { toast('PIN-ul are 4–8 cifre.'); return; }
         const hp = await hashPin(v);
-        if (nou) { s.pin = hp; salveaza(); deblocat = true; toast('PIN salvat.', 'ok'); }
-        else if (hp === s.pin) deblocat = true; else { toast('PIN greșit.'); return; }
+        if (hp === PIN_HASH) deblocat = true; else { toast('PIN greșit.'); return; }
         app.replaceChildren(); ecranProfesor(app);
       } }, nou ? 'Setează PIN' : 'Intră'))));
     setTimeout(() => inp.focus(), 0);
