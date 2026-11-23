@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Teste automate – GeoQuest Coordonate și Revoluție</title>
+<style>body{font:15px/1.5 system-ui;margin:16px;background:#fff;color:#111}.ok{color:#1d6b2c}.nu{color:#b3261e;font-weight:700}pre{white-space:pre-wrap}</style></head>
+<body><h1>Teste automate</h1><p>Integritatea datelor, baremul testului amestecat și verificarea fiecărui item.</p><pre id="out">Se rulează…</pre>
+<script type="module">
+import * as E from '../js/engine.js';
+import { creeaza } from '../js/exercises.js';
+import { construiesteTest } from '../js/expeditie.js';
+const rez = []; const t = (nume, ok, info = '') => rez.push({ nume, ok: !!ok, info });
+const SLOTURI = ['I-A', 'I-B', 'I-C', 'I-D', 'II-a', 'II-b', 'II-c', 'II-d', 'III'];
+import { evalueazaCoordonate } from '../js/exercises.js';
+import { sePotriveste } from '../js/normalize.js';
+try {
+  await E.incarcaDate();
+  const toate = E.toateIntrebarile();
+  // 1. integritate
+  const ID = [1, 2].flatMap(n => SLOTURI.map(s => `V${n}-${s}`));
+  t('18 itemi: toate cele 9 poziții din Varianta 1 și din Varianta 2', ID.every(id => E.D.teste.some(q => q.id === id)) && E.D.teste.length === 18, `${E.D.teste.length} itemi`);
+  t('fără id-uri duplicate', new Set(toate.map(q => q.id)).size === toate.length);
+  t('fără întrebări suplimentare: doar itemii din test', E.D.extra.length === 0 && toate.every(q => q.origine === 'test'));
+  const niv = E.D.taramuri.flatMap(x => x.niveluri.map(n => n.id));
+  t('fiecare item aparține unui nivel existent', toate.every(q => niv.includes(q.nivel)));
+  t('AMESTECARE: fiecare nivel conține itemi din AMBELE variante', niv.every(n => new Set(E.intrebariNivel(n).map(q => q.test)).size === 2));
+  // 2. coordonatele din barem
+  const bar = (v) => E.D.teste.filter(q => q.tip === 'coordonate' && q.test === v).map(q => q.punct + ': ' + q.raspuns).join(' | ');
+  t('V1 coordonate = barem', bar(1) === 'A: 30° lat. N; 120° long. V | B: 60° lat. N; 80° long. E | C: 20° lat. S; 40° long. E | D: 50° lat. S; 140° long. V', bar(1));
+  t('V2 coordonate = barem', bar(2) === 'A: 50° lat. N; 40° long. V | B: 10° lat. N; 120° long. E | C: 40° lat. S; 160° long. E | D: 70° lat. S; 60° long. V', bar(2));
+  const qa = E.D.teste.find(q => q.id === 'V1-I-A');
+  t('barem coordonate: corect 1p; fără emisfere corecte 0,5p; doar latitudinea 0,5p; grade greșite 0', evalueazaCoordonate(qa, { lat: 30, ns: 'N', lon: 120, ev: 'V' }) === 1 && evalueazaCoordonate(qa, { lat: 30, ns: 'S', lon: 120, ev: 'E' }) === .5 && evalueazaCoordonate(qa, { lat: 30, ns: 'N', lon: 100, ev: 'V' }) === .5 && evalueazaCoordonate(qa, { lat: 40, ns: 'N', lon: 100, ev: 'V' }) === 0);
+  // 3. completare: răspunsuri acceptate
+  const acc = (id, r) => sePotriveste(r, E.D.teste.find(q => q.id === id).raspunsuri_acceptate);
+  t('completare: acceptă „soarelui”, „6”, „Bisect”, „zonelor de caldura”, „365”, „patru”, „anotimpurilor”, „egala”',
+    acc('V1-II-a', 'soarelui') && acc('V1-II-b', '6') && acc('V1-II-c', 'Bisect') && acc('V1-II-d', 'zonelor de caldura') && acc('V2-II-a', '365') && acc('V2-II-b', 'patru') && acc('V2-II-c', 'anotimpurilor') && acc('V2-II-c', 'zonelor de căldură') && acc('V2-II-d', 'egala'));
+  t('completare: respinge „Lunii”, „5”, „normal”, „zilelor”, „366”, „6”, „inegală”',
+    !acc('V1-II-a', 'Lunii') && !acc('V1-II-b', '5') && !acc('V1-II-c', 'normal') && !acc('V1-II-d', 'zilelor') && !acc('V2-II-a', '366') && !acc('V2-II-b', '6') && !acc('V2-II-d', 'inegală'));
+  t('potrivire = barem (V1: 1–b 2–c 3–e 4–a · V2: 1–d 2–c 3–b 4–a)', [1, 2].map(v => { const q = E.D.teste.find(x => x.id === `V${v}-III`); return [0, 1, 2, 3].map(i => 'abcde'[q.perechi[i]]).join(''); }).join('|') === 'bcea|dcba');
+  // 4. rezolvarea corectă = punctaj maxim, greșită = 0
+  const rele = [];
+  for (const q of toate) { const c = creeaza(q, {}); const v = c.evalueaza(c._rezolva()); if (Math.abs(v - 1) > 1e-9) rele.push(q.id + '=' + v); }
+  t('rezolvarea corectă primește punctaj maxim la toți cei ' + toate.length + ' itemi', !rele.length, rele.join(', '));
+  const gresit = (q) => {
+    switch (q.tip) {
+      case 'coordonate': return { lat: (Math.abs(q.lat) + 10) % 100, ns: q.lat > 0 ? 'S' : 'N', lon: (Math.abs(q.lon) + 20) % 200, ev: q.lon > 0 ? 'V' : 'E' };
+      case 'completare': return 'xyz';
+      case 'potrivire': return Object.fromEntries(q.coloanaA.map((_, i) => [i, (q.perechi[i] + 1) % q.coloanaB.length === q.perechi[i] ? 0 : [0, 1, 2, 3, 4].find(j => j !== q.perechi[i])]));
+    }
+  };
+  const nuZero = toate.filter(q => { const c = creeaza(q, {}); return c.evalueaza(gresit(q)) !== 0; }).map(q => q.id);
+  t('răspunsurile greșite primesc 0 puncte la toți itemii', !nuZero.length, nuZero.join(', '));
+  // 5. testul amestecat
+  const pePS = (it) => { const o = {}; for (const q of it) o[q.subiect] = (o[q.subiect] || 0) + q.puncte; return o; };
+  let okBarem = true, okStruct = true, okMix = false, combinatii = new Set();
+  for (let k = 0; k < 300; k++) {
+    const it = construiesteTest();
+    combinatii.add(it.map(q => q.test).join(''));
+    if (it.length !== 9 || it.map(q => q.slot).join() !== SLOTURI.join()) okStruct = false;
+    const max = it.reduce((a, q) => a + q.puncte, 0);
+    const perfect = it.reduce((a, q) => { const c = creeaza(q, {}); return a + q.puncte * c.evalueaza(c._rezolva()); }, 0) + E.D.test.oficiu;
+    if (max !== 8 || Math.abs(perfect - 10) > 1e-9 || JSON.stringify(pePS(it)) !== JSON.stringify({ I: 4, II: 2, III: 2 })) okBarem = false;
+    if (new Set(it.map(q => q.test)).size === 2) okMix = true;
+  }
+  t('testul amestecat are mereu cele 9 poziții, în ordinea I–III', okStruct);
+  t('testul amestecat: 8p + 2p oficiu = 10, pe subiecte I 4p, II 2p, III 2p', okBarem);
+  t('testul amestecat combină itemi din ambele variante', okMix && combinatii.size > 100, `${combinatii.size} combinații diferite în 300 de generări`);
+  const doar1 = construiesteTest((s, v) => v.find(q => q.test === 1));
+  t('alegerea „tot din Varianta 1” reface exact Varianta 1', doar1.every(q => q.test === 1) && doar1.length === 9);
+  const toateGresite = doar1.reduce((a, q) => { const c = creeaza(q, {}); return a + q.puncte * c.evalueaza(gresit(q)); }, 0) + E.D.test.oficiu;
+  t('toate greșite = 2p din oficiu (nota 2)', toateGresite === 2, String(toateGresite));
+  // 6. flashcard-uri
+  const cd = E.carduri();
+  t('flashcard-uri: 8 coordonate + 8 completări + 8 asocieri = 24', cd.length === 24, String(cd.length));
+} catch (e) { t('excepție', false, e.stack || e.message); }
+window.__rezultat = rez;
+document.getElementById('out').innerHTML = rez.map(r => `<span class="${r.ok ? 'ok' : 'nu'}">${r.ok ? '✓' : '✗'} ${r.nume}</span>${r.info ? ' — ' + r.info : ''}`).join('\n') + `\n\n${rez.filter(r => r.ok).length} / ${rez.length} teste trecute`;
+</script></body></html>

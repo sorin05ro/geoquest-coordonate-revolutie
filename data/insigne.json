@@ -1,0 +1,68 @@
+[
+ {
+  "id": "primul-pas",
+  "nume": "Primul pas",
+  "icon": "👣",
+  "descriere": "Primul nivel terminat."
+ },
+ {
+  "id": "trei-stele",
+  "nume": "Trei stele",
+  "icon": "⭐",
+  "descriere": "Un nivel terminat cu 3 stele."
+ },
+ {
+  "id": "toate-nivelurile",
+  "nume": "Toate nivelurile",
+  "icon": "🧭",
+  "descriere": "Cel puțin o stea în fiecare nivel."
+ },
+ {
+  "id": "cititor-de-retea",
+  "nume": "Cititor de rețea",
+  "icon": "🌐",
+  "descriere": "6 puncte cu coordonatele corecte."
+ },
+ {
+  "id": "ochi-de-cartograf",
+  "nume": "Ochi de cartograf",
+  "icon": "🗺️",
+  "descriere": "4 puncte corecte, unul după altul."
+ },
+ {
+  "id": "calendarul",
+  "nume": "Calendarul Pământului",
+  "icon": "📅",
+  "descriere": "5 spații completate corect despre revoluție."
+ },
+ {
+  "id": "anotimpurile",
+  "nume": "Stăpânul anotimpurilor",
+  "icon": "🌗",
+  "descriere": "O asociere a solstițiilor și echinocțiilor rezolvată perfect."
+ },
+ {
+  "id": "seria-de-foc",
+  "nume": "Seria de foc",
+  "icon": "🔥",
+  "descriere": "Ai învățat 5 zile la rând."
+ },
+ {
+  "id": "expeditia",
+  "nume": "Expediția",
+  "icon": "🏅",
+  "descriere": "Marea Expediție terminată cu nota cel puțin 9."
+ },
+ {
+  "id": "expeditia-perfecta",
+  "nume": "Nota 10",
+  "icon": "🏆",
+  "descriere": "Marea Expediție terminată cu nota 10."
+ },
+ {
+  "id": "memorie-de-bufnita",
+  "nume": "Memorie de bufniță",
+  "icon": "🦉",
+  "descriere": "10 flashcard-uri ajunse în cutia 5."
+ }
+]

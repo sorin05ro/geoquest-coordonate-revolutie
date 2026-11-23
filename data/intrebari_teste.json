@@ -1,0 +1,583 @@
+[
+ {
+  "id": "V1-I-A",
+  "test": 1,
+  "subiect": "I",
+  "slot": "I-A",
+  "puncte": 1,
+  "tip": "coordonate",
+  "taram": "t1",
+  "nivel": "n1",
+  "enunt": "Precizează coordonatele geografice ale punctului A.",
+  "origine": "test",
+  "explicatie_geo": "Punctul A stă pe paralela de 30°, deasupra Ecuatorului, în emisfera nordică, și pe meridianul de 120°, în stânga Meridianului 0°, în emisfera vestică: 30° lat. N; 120° long. V.",
+  "sursa": "Latitudinea se citește pe paralele (N deasupra Ecuatorului, S dedesubt). Longitudinea se citește pe meridiane (E în dreapta Meridianului 0°, V în stânga).",
+  "lectie": "coordonate",
+  "dificultate": 2,
+  "punct": "A",
+  "lat": 30,
+  "lon": -120,
+  "raspuns": "30° lat. N; 120° long. V",
+  "puncte_retea": [
+   {
+    "eticheta": "A",
+    "lat": 30,
+    "lon": -120
+   },
+   {
+    "eticheta": "B",
+    "lat": 60,
+    "lon": 80
+   },
+   {
+    "eticheta": "C",
+    "lat": -20,
+    "lon": 40
+   },
+   {
+    "eticheta": "D",
+    "lat": -50,
+    "lon": -140
+   }
+  ]
+ },
+ {
+  "id": "V1-I-B",
+  "test": 1,
+  "subiect": "I",
+  "slot": "I-B",
+  "puncte": 1,
+  "tip": "coordonate",
+  "taram": "t1",
+  "nivel": "n1",
+  "enunt": "Precizează coordonatele geografice ale punctului B.",
+  "origine": "test",
+  "explicatie_geo": "Punctul B stă pe paralela de 60°, deasupra Ecuatorului, în emisfera nordică, și pe meridianul de 80°, în dreapta Meridianului 0°, în emisfera estică: 60° lat. N; 80° long. E.",
+  "sursa": "Latitudinea se citește pe paralele (N deasupra Ecuatorului, S dedesubt). Longitudinea se citește pe meridiane (E în dreapta Meridianului 0°, V în stânga).",
+  "lectie": "coordonate",
+  "dificultate": 2,
+  "punct": "B",
+  "lat": 60,
+  "lon": 80,
+  "raspuns": "60° lat. N; 80° long. E",
+  "puncte_retea": [
+   {
+    "eticheta": "A",
+    "lat": 30,
+    "lon": -120
+   },
+   {
+    "eticheta": "B",
+    "lat": 60,
+    "lon": 80
+   },
+   {
+    "eticheta": "C",
+    "lat": -20,
+    "lon": 40
+   },
+   {
+    "eticheta": "D",
+    "lat": -50,
+    "lon": -140
+   }
+  ]
+ },
+ {
+  "id": "V1-I-C",
+  "test": 1,
+  "subiect": "I",
+  "slot": "I-C",
+  "puncte": 1,
+  "tip": "coordonate",
+  "taram": "t1",
+  "nivel": "n1",
+  "enunt": "Precizează coordonatele geografice ale punctului C.",
+  "origine": "test",
+  "explicatie_geo": "Punctul C stă pe paralela de 20°, sub Ecuator, în emisfera sudică, și pe meridianul de 40°, în dreapta Meridianului 0°, în emisfera estică: 20° lat. S; 40° long. E.",
+  "sursa": "Latitudinea se citește pe paralele (N deasupra Ecuatorului, S dedesubt). Longitudinea se citește pe meridiane (E în dreapta Meridianului 0°, V în stânga).",
+  "lectie": "coordonate",
+  "dificultate": 2,
+  "punct": "C",
+  "lat": -20,
+  "lon": 40,
+  "raspuns": "20° lat. S; 40° long. E",
+  "puncte_retea": [
+   {
+    "eticheta": "A",
+    "lat": 30,
+    "lon": -120
+   },
+   {
+    "eticheta": "B",
+    "lat": 60,
+    "lon": 80
+   },
+   {
+    "eticheta": "C",
+    "lat": -20,
+    "lon": 40
+   },
+   {
+    "eticheta": "D",
+    "lat": -50,
+    "lon": -140
+   }
+  ]
+ },
+ {
+  "id": "V1-I-D",
+  "test": 1,
+  "subiect": "I",
+  "slot": "I-D",
+  "puncte": 1,
+  "tip": "coordonate",
+  "taram": "t1",
+  "nivel": "n1",
+  "enunt": "Precizează coordonatele geografice ale punctului D.",
+  "origine": "test",
+  "explicatie_geo": "Punctul D stă pe paralela de 50°, sub Ecuator, în emisfera sudică, și pe meridianul de 140°, în stânga Meridianului 0°, în emisfera vestică: 50° lat. S; 140° long. V.",
+  "sursa": "Latitudinea se citește pe paralele (N deasupra Ecuatorului, S dedesubt). Longitudinea se citește pe meridiane (E în dreapta Meridianului 0°, V în stânga).",
+  "lectie": "coordonate",
+  "dificultate": 2,
+  "punct": "D",
+  "lat": -50,
+  "lon": -140,
+  "raspuns": "50° lat. S; 140° long. V",
+  "puncte_retea": [
+   {
+    "eticheta": "A",
+    "lat": 30,
+    "lon": -120
+   },
+   {
+    "eticheta": "B",
+    "lat": 60,
+    "lon": 80
+   },
+   {
+    "eticheta": "C",
+    "lat": -20,
+    "lon": 40
+   },
+   {
+    "eticheta": "D",
+    "lat": -50,
+    "lon": -140
+   }
+  ]
+ },
+ {
+  "id": "V2-I-A",
+  "test": 2,
+  "subiect": "I",
+  "slot": "I-A",
+  "puncte": 1,
+  "tip": "coordonate",
+  "taram": "t1",
+  "nivel": "n1",
+  "enunt": "Precizează coordonatele geografice ale punctului A.",
+  "origine": "test",
+  "explicatie_geo": "Punctul A stă pe paralela de 50°, deasupra Ecuatorului, în emisfera nordică, și pe meridianul de 40°, în stânga Meridianului 0°, în emisfera vestică: 50° lat. N; 40° long. V.",
+  "sursa": "Latitudinea se citește pe paralele (N deasupra Ecuatorului, S dedesubt). Longitudinea se citește pe meridiane (E în dreapta Meridianului 0°, V în stânga).",
+  "lectie": "coordonate",
+  "dificultate": 2,
+  "punct": "A",
+  "lat": 50,
+  "lon": -40,
+  "raspuns": "50° lat. N; 40° long. V",
+  "puncte_retea": [
+   {
+    "eticheta": "A",
+    "lat": 50,
+    "lon": -40
+   },
+   {
+    "eticheta": "B",
+    "lat": 10,
+    "lon": 120
+   },
+   {
+    "eticheta": "C",
+    "lat": -40,
+    "lon": 160
+   },
+   {
+    "eticheta": "D",
+    "lat": -70,
+    "lon": -60
+   }
+  ]
+ },
+ {
+  "id": "V2-I-B",
+  "test": 2,
+  "subiect": "I",
+  "slot": "I-B",
+  "puncte": 1,
+  "tip": "coordonate",
+  "taram": "t1",
+  "nivel": "n1",
+  "enunt": "Precizează coordonatele geografice ale punctului B.",
+  "origine": "test",
+  "explicatie_geo": "Punctul B stă pe paralela de 10°, deasupra Ecuatorului, în emisfera nordică, și pe meridianul de 120°, în dreapta Meridianului 0°, în emisfera estică: 10° lat. N; 120° long. E.",
+  "sursa": "Latitudinea se citește pe paralele (N deasupra Ecuatorului, S dedesubt). Longitudinea se citește pe meridiane (E în dreapta Meridianului 0°, V în stânga).",
+  "lectie": "coordonate",
+  "dificultate": 2,
+  "punct": "B",
+  "lat": 10,
+  "lon": 120,
+  "raspuns": "10° lat. N; 120° long. E",
+  "puncte_retea": [
+   {
+    "eticheta": "A",
+    "lat": 50,
+    "lon": -40
+   },
+   {
+    "eticheta": "B",
+    "lat": 10,
+    "lon": 120
+   },
+   {
+    "eticheta": "C",
+    "lat": -40,
+    "lon": 160
+   },
+   {
+    "eticheta": "D",
+    "lat": -70,
+    "lon": -60
+   }
+  ]
+ },
+ {
+  "id": "V2-I-C",
+  "test": 2,
+  "subiect": "I",
+  "slot": "I-C",
+  "puncte": 1,
+  "tip": "coordonate",
+  "taram": "t1",
+  "nivel": "n1",
+  "enunt": "Precizează coordonatele geografice ale punctului C.",
+  "origine": "test",
+  "explicatie_geo": "Punctul C stă pe paralela de 40°, sub Ecuator, în emisfera sudică, și pe meridianul de 160°, în dreapta Meridianului 0°, în emisfera estică: 40° lat. S; 160° long. E.",
+  "sursa": "Latitudinea se citește pe paralele (N deasupra Ecuatorului, S dedesubt). Longitudinea se citește pe meridiane (E în dreapta Meridianului 0°, V în stânga).",
+  "lectie": "coordonate",
+  "dificultate": 2,
+  "punct": "C",
+  "lat": -40,
+  "lon": 160,
+  "raspuns": "40° lat. S; 160° long. E",
+  "puncte_retea": [
+   {
+    "eticheta": "A",
+    "lat": 50,
+    "lon": -40
+   },
+   {
+    "eticheta": "B",
+    "lat": 10,
+    "lon": 120
+   },
+   {
+    "eticheta": "C",
+    "lat": -40,
+    "lon": 160
+   },
+   {
+    "eticheta": "D",
+    "lat": -70,
+    "lon": -60
+   }
+  ]
+ },
+ {
+  "id": "V2-I-D",
+  "test": 2,
+  "subiect": "I",
+  "slot": "I-D",
+  "puncte": 1,
+  "tip": "coordonate",
+  "taram": "t1",
+  "nivel": "n1",
+  "enunt": "Precizează coordonatele geografice ale punctului D.",
+  "origine": "test",
+  "explicatie_geo": "Punctul D stă pe paralela de 70°, sub Ecuator, în emisfera sudică, și pe meridianul de 60°, în stânga Meridianului 0°, în emisfera vestică: 70° lat. S; 60° long. V.",
+  "sursa": "Latitudinea se citește pe paralele (N deasupra Ecuatorului, S dedesubt). Longitudinea se citește pe meridiane (E în dreapta Meridianului 0°, V în stânga).",
+  "lectie": "coordonate",
+  "dificultate": 2,
+  "punct": "D",
+  "lat": -70,
+  "lon": -60,
+  "raspuns": "70° lat. S; 60° long. V",
+  "puncte_retea": [
+   {
+    "eticheta": "A",
+    "lat": 50,
+    "lon": -40
+   },
+   {
+    "eticheta": "B",
+    "lat": 10,
+    "lon": 120
+   },
+   {
+    "eticheta": "C",
+    "lat": -40,
+    "lon": 160
+   },
+   {
+    "eticheta": "D",
+    "lat": -70,
+    "lon": -60
+   }
+  ]
+ },
+ {
+  "id": "V1-II-a",
+  "test": 1,
+  "subiect": "II",
+  "slot": "II-a",
+  "puncte": 0.5,
+  "tip": "completare",
+  "taram": "t2",
+  "nivel": "n2",
+  "enunt": "Mișcarea de revoluție reprezintă rotația Pământului în jurul …… .",
+  "origine": "test",
+  "explicatie_geo": "Pământul se rotește în jurul Soarelui: aceasta este mișcarea de revoluție.",
+  "sursa": "Mișcarea de revoluție este rotația Pământului în jurul Soarelui.",
+  "lectie": "revolutie",
+  "dificultate": 2,
+  "raspunsuri_acceptate": [
+   "Soarelui",
+   "Soarele",
+   "Soare"
+  ],
+  "indiciu": "Este steaua care ne dă lumină și căldură."
+ },
+ {
+  "id": "V1-II-b",
+  "test": 1,
+  "subiect": "II",
+  "slot": "II-b",
+  "puncte": 0.5,
+  "tip": "completare",
+  "taram": "t2",
+  "nivel": "n2",
+  "enunt": "O mișcare de revoluție completă durează 365 de zile și …… ore.",
+  "origine": "test",
+  "explicatie_geo": "Revoluția durează 365 de zile și 6 ore.",
+  "sursa": "O mișcare de revoluție completă durează 365 de zile și 6 ore.",
+  "lectie": "revolutie",
+  "dificultate": 2,
+  "raspunsuri_acceptate": [
+   "6",
+   "șase"
+  ],
+  "indiciu": "Scrie un număr: câte ore se adaugă la cele 365 de zile?"
+ },
+ {
+  "id": "V1-II-c",
+  "test": 1,
+  "subiect": "II",
+  "slot": "II-c",
+  "puncte": 0.5,
+  "tip": "completare",
+  "taram": "t2",
+  "nivel": "n2",
+  "enunt": "Ziua de 29 februarie apare o dată la 4 ani, în anul …… .",
+  "origine": "test",
+  "explicatie_geo": "Anul cu 29 februarie are 366 de zile și se numește an bisect.",
+  "sursa": "Cele 6 ore se însumează o dată la 4 ani și formează ziua de 29 februarie; anul acela se numește an bisect.",
+  "lectie": "revolutie",
+  "dificultate": 2,
+  "raspunsuri_acceptate": [
+   "bisect"
+  ],
+  "indiciu": "Începe cu „bi…”."
+ },
+ {
+  "id": "V1-II-d",
+  "test": 1,
+  "subiect": "II",
+  "slot": "II-d",
+  "puncte": 0.5,
+  "tip": "completare",
+  "taram": "t2",
+  "nivel": "n3",
+  "enunt": "Consecințele mișcării de revoluție sunt formarea anotimpurilor și formarea …… .",
+  "origine": "test",
+  "explicatie_geo": "Mișcarea de revoluție are două consecințe: anotimpurile și zonele de căldură.",
+  "sursa": "Consecințele mișcării de revoluție: formarea anotimpurilor și formarea zonelor de căldură.",
+  "lectie": "revolutie",
+  "dificultate": 2,
+  "raspunsuri_acceptate": [
+   "zonelor de căldură",
+   "zonele de căldură",
+   "zone de căldură",
+   "zonelor de caldura"
+  ],
+  "indiciu": "Două cuvinte despre cât de cald este în diferite părți ale Pământului: „zonelor de …”."
+ },
+ {
+  "id": "V2-II-a",
+  "test": 2,
+  "subiect": "II",
+  "slot": "II-a",
+  "puncte": 0.5,
+  "tip": "completare",
+  "taram": "t2",
+  "nivel": "n2",
+  "enunt": "Mișcarea de revoluție a Pământului în jurul Soarelui se realizează în …… de zile și 6 ore.",
+  "origine": "test",
+  "explicatie_geo": "Revoluția durează 365 de zile și 6 ore – aproape cât un an obișnuit.",
+  "sursa": "O mișcare de revoluție completă durează 365 de zile și 6 ore.",
+  "lectie": "revolutie",
+  "dificultate": 2,
+  "raspunsuri_acceptate": [
+   "365",
+   "trei sute șaizeci și cinci"
+  ],
+  "indiciu": "Câte zile are un an obișnuit? Scrie numărul."
+ },
+ {
+  "id": "V2-II-b",
+  "test": 2,
+  "subiect": "II",
+  "slot": "II-b",
+  "puncte": 0.5,
+  "tip": "completare",
+  "taram": "t2",
+  "nivel": "n2",
+  "enunt": "Cele 6 ore se însumează o dată la …… ani și formează ziua de 29 februarie.",
+  "origine": "test",
+  "explicatie_geo": "4 × 6 ore = 24 de ore, adică o zi: 29 februarie, o dată la 4 ani.",
+  "sursa": "Cele 6 ore se însumează o dată la 4 ani și formează ziua de 29 februarie; anul acela se numește an bisect.",
+  "lectie": "revolutie",
+  "dificultate": 2,
+  "raspunsuri_acceptate": [
+   "4",
+   "patru"
+  ],
+  "indiciu": "Câte bucăți de 6 ore fac o zi de 24 de ore?"
+ },
+ {
+  "id": "V2-II-c",
+  "test": 2,
+  "subiect": "II",
+  "slot": "II-c",
+  "puncte": 0.5,
+  "tip": "completare",
+  "taram": "t2",
+  "nivel": "n3",
+  "enunt": "O consecință a mișcării de revoluție este formarea …… .",
+  "origine": "test",
+  "explicatie_geo": "Consecințele revoluției sunt anotimpurile și zonele de căldură; oricare dintre ele este corectă.",
+  "sursa": "Consecințele mișcării de revoluție: formarea anotimpurilor și formarea zonelor de căldură.",
+  "lectie": "revolutie",
+  "dificultate": 2,
+  "raspunsuri_acceptate": [
+   "anotimpurilor",
+   "anotimpurile",
+   "anotimpuri",
+   "zonelor de căldură",
+   "zonele de căldură",
+   "zone de căldură"
+  ],
+  "indiciu": "Primăvara, vara, toamna și iarna sunt…"
+ },
+ {
+  "id": "V2-II-d",
+  "test": 2,
+  "subiect": "II",
+  "slot": "II-d",
+  "puncte": 0.5,
+  "tip": "completare",
+  "taram": "t2",
+  "nivel": "n3",
+  "enunt": "La echinocții (21 martie și 23 septembrie), ziua este …… cu noaptea.",
+  "origine": "test",
+  "explicatie_geo": "La echinocții ziua este egală cu noaptea.",
+  "sursa": "21 martie și 23 septembrie – echinocțiile: ziua este egală cu noaptea.",
+  "lectie": "revolutie",
+  "dificultate": 2,
+  "raspunsuri_acceptate": [
+   "egală",
+   "egal",
+   "egale"
+  ],
+  "indiciu": "„Echi-” înseamnă „la fel”."
+ },
+ {
+  "id": "V1-III",
+  "test": 1,
+  "subiect": "III",
+  "slot": "III",
+  "puncte": 2,
+  "tip": "potrivire",
+  "taram": "t2",
+  "nivel": "n3",
+  "enunt": "Asociază fiecare moment al mișcării de revoluție din coloana A cu caracteristica potrivită din coloana B. Un element din coloana B nu are corespondent.",
+  "origine": "test",
+  "explicatie_geo": "21 martie: zi = noapte, începe primăvara în nord. 22 iunie: cea mai lungă zi în nord. 23 septembrie: zi = noapte, începe toamna în nord. 22 decembrie: cea mai lungă noapte în nord.",
+  "sursa": "Fișele „Echinocțiile” și „Solstițiile”.",
+  "lectie": "revolutie",
+  "dificultate": 2,
+  "coloanaA": [
+   "Echinocțiul de primăvară (21 martie)",
+   "Solstițiul de vară (22 iunie)",
+   "Echinocțiul de toamnă (23 septembrie)",
+   "Solstițiul de iarnă (22 decembrie)"
+  ],
+  "coloanaB": [
+   "noaptea cea mai lungă în emisfera nordică; iarnă în nord, vară în sud",
+   "ziua este egală cu noaptea; începe primăvara în emisfera nordică",
+   "ziua cea mai lungă în emisfera nordică; vară în nord, iarnă în sud",
+   "ziua cea mai lungă în emisfera sudică; vară în nord",
+   "ziua este egală cu noaptea; începe toamna în emisfera nordică"
+  ],
+  "perechi": {
+   "0": 1,
+   "1": 2,
+   "2": 4,
+   "3": 0
+  }
+ },
+ {
+  "id": "V2-III",
+  "test": 2,
+  "subiect": "III",
+  "slot": "III",
+  "puncte": 2,
+  "tip": "potrivire",
+  "taram": "t2",
+  "nivel": "n3",
+  "enunt": "Asociază fiecare moment al mișcării de revoluție din coloana A cu caracteristica potrivită din coloana B. Un element din coloana B nu are corespondent.",
+  "origine": "test",
+  "explicatie_geo": "22 decembrie: cea mai lungă zi în sud, vară în sud. 23 septembrie: începe noaptea polară la Polul Nord, primăvara în sud. 22 iunie: cea mai lungă noapte în sud, iarnă în sud. 21 martie: începe ziua polară la Polul Nord, toamna în sud.",
+  "sursa": "Fișele „Echinocțiile” și „Solstițiile”.",
+  "lectie": "revolutie",
+  "dificultate": 2,
+  "coloanaA": [
+   "Solstițiul de iarnă (22 decembrie)",
+   "Echinocțiul de toamnă (23 septembrie)",
+   "Solstițiul de vară (22 iunie)",
+   "Echinocțiul de primăvară (21 martie)"
+  ],
+  "coloanaB": [
+   "începe ziua polară la Polul Nord; începe toamna în emisfera sudică",
+   "noaptea cea mai lungă în emisfera sudică; iarnă în sud",
+   "începe noaptea polară la Polul Nord; începe primăvara în emisfera sudică",
+   "ziua cea mai lungă în emisfera sudică; vară în sud",
+   "ziua cea mai lungă în emisfera nordică; iarnă în nord"
+  ],
+  "perechi": {
+   "0": 3,
+   "1": 2,
+   "2": 1,
+   "3": 0
+  }
+ }
+]

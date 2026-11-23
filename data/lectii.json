@@ -1,0 +1,162 @@
+{
+ "taramuri": [
+  {
+   "id": "t1",
+   "nume": "Rețeaua de grade",
+   "icon": "🌐",
+   "culoare": "#1e4f80",
+   "niveluri": [
+    {
+     "id": "n1",
+     "titlu": "Coordonatele punctelor A, B, C, D"
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "nume": "Mișcarea de revoluție",
+   "icon": "☀️",
+   "culoare": "#b7791f",
+   "niveluri": [
+    {
+     "id": "n2",
+     "titlu": "Durata revoluției și anul bisect"
+    },
+    {
+     "id": "n3",
+     "titlu": "Anotimpuri, solstiții și echinocții"
+    }
+   ]
+  }
+ ],
+ "structura_test": [
+  {
+   "subiect": "I",
+   "cerinta": "Precizează coordonatele geografice (latitudinea și longitudinea) ale punctelor A, B, C și D marcate pe rețea.",
+   "sloturi": [
+    "I-A",
+    "I-B",
+    "I-C",
+    "I-D"
+   ]
+  },
+  {
+   "subiect": "II",
+   "cerinta": "Completează spațiile libere cu termenii potriviți.",
+   "sloturi": [
+    "II-a",
+    "II-b",
+    "II-c",
+    "II-d"
+   ]
+  },
+  {
+   "subiect": "III",
+   "cerinta": "Asociază fiecare moment al mișcării de revoluție din coloana A cu caracteristica potrivită din coloana B. Un element din coloana B nu are corespondent.",
+   "sloturi": [
+    "III"
+   ]
+  }
+ ],
+ "test": {
+  "titlu": "Coordonatele geografice. Mișcarea de revoluție a Pământului",
+  "oficiu": 2,
+  "total": 10,
+  "minute": 40
+ },
+ "lectii_index": [
+  {
+   "id": "coordonate",
+   "nume": "Coordonatele geografice",
+   "icon": "🌐",
+   "culoare": "#1e4f80"
+  },
+  {
+   "id": "revolutie",
+   "nume": "Mișcarea de revoluție",
+   "icon": "☀️",
+   "culoare": "#b7791f"
+  }
+ ],
+ "lectii": {
+  "coordonate": [
+   {
+    "titlu": "Rețeaua de grade",
+    "puncte": [
+     "Paralelele sunt cercuri imaginare, paralele cu Ecuatorul. Pe hartă sunt liniile orizontale.",
+     "Ecuatorul este paralela de 0°. El împarte Pământul în emisfera nordică (sus) și emisfera sudică (jos).",
+     "Meridianele sunt semicercuri imaginare care unesc cei doi poli. Pe hartă sunt liniile verticale.",
+     "Meridianul 0° împarte Pământul în emisfera estică (în dreapta lui) și emisfera vestică (în stânga lui).",
+     "Pe rețeaua din test, meridianele sunt trasate din 20° în 20°, iar paralelele din 10° în 10°."
+    ]
+   },
+   {
+    "titlu": "Latitudinea",
+    "puncte": [
+     "Latitudinea arată pe ce paralelă se află punctul: câte grade este depărtat de Ecuator.",
+     "Are valori de la 0° (la Ecuator) până la 90° (la poli).",
+     "Dacă punctul este deasupra Ecuatorului, scriem lat. N (nordică). Dacă este dedesubt, scriem lat. S (sudică).",
+     "Valorile latitudinii se citesc pe marginea laterală a rețelei, în dreptul paralelelor."
+    ]
+   },
+   {
+    "titlu": "Longitudinea",
+    "puncte": [
+     "Longitudinea arată pe ce meridian se află punctul: câte grade este depărtat de Meridianul 0°.",
+     "Are valori de la 0° până la 180°.",
+     "Dacă punctul este în dreapta Meridianului 0°, scriem long. E (estică). Dacă este în stânga, scriem long. V (vestică).",
+     "Valorile longitudinii se citesc pe marginea de sus a rețelei, în dreptul meridianelor."
+    ]
+   },
+   {
+    "titlu": "Cum precizez coordonatele unui punct",
+    "puncte": [
+     "1. Urmăresc paralela pe care stă punctul și citesc valoarea ei: aceasta este latitudinea.",
+     "2. Mă uit dacă punctul este deasupra sau dedesubtul Ecuatorului: N sau S.",
+     "3. Urmăresc meridianul pe care stă punctul și citesc valoarea lui: aceasta este longitudinea.",
+     "4. Mă uit dacă punctul este în dreapta sau în stânga Meridianului 0°: E sau V.",
+     "Exemplu: 30° lat. N; 120° long. V. Atenție: fără emisferă (N/S, E/V), răspunsul este incomplet și primește doar jumătate din punctaj."
+    ]
+   }
+  ],
+  "revolutie": [
+   {
+    "titlu": "Ce este mișcarea de revoluție",
+    "puncte": [
+     "Mișcarea de revoluție este rotația Pământului în jurul Soarelui.",
+     "O mișcare de revoluție completă durează 365 de zile și 6 ore."
+    ]
+   },
+   {
+    "titlu": "Anul bisect",
+    "puncte": [
+     "Cele 6 ore rămase în fiecare an se însumează o dată la 4 ani: 4 × 6 ore = 24 de ore, adică o zi întreagă.",
+     "Această zi în plus este 29 februarie.",
+     "Anul care are ziua de 29 februarie se numește an bisect."
+    ]
+   },
+   {
+    "titlu": "Consecințele mișcării de revoluție",
+    "puncte": [
+     "Formarea anotimpurilor.",
+     "Formarea zonelor de căldură."
+    ]
+   },
+   {
+    "titlu": "Echinocțiile (ziua egală cu noaptea)",
+    "puncte": [
+     "21 martie – echinocțiul de primăvară: ziua este egală cu noaptea; începe primăvara în emisfera nordică și toamna în emisfera sudică; începe ziua polară la Polul Nord.",
+     "23 septembrie – echinocțiul de toamnă: ziua este egală cu noaptea; începe toamna în emisfera nordică și primăvara în emisfera sudică; începe noaptea polară la Polul Nord."
+    ]
+   },
+   {
+    "titlu": "Solstițiile",
+    "puncte": [
+     "22 iunie – solstițiul de vară: ziua cea mai lungă în emisfera nordică; vară în emisfera nordică, iarnă în emisfera sudică.",
+     "22 decembrie – solstițiul de iarnă: noaptea cea mai lungă în emisfera nordică și ziua cea mai lungă în emisfera sudică; iarnă în emisfera nordică, vară în emisfera sudică.",
+     "Atenție: anotimpurile sunt inversate în cele două emisfere."
+    ]
+   }
+  ]
+ }
+}
